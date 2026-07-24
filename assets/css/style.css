@@ -1,0 +1,233 @@
+:root {
+  --color-text: #1a1a1a;
+  --color-bg: #ffffff;
+  --color-accent: #1f5e4a; /* placeholder green, swap once branding is set */
+  --color-accent-dark: #163f32;
+  --color-muted: #6b6b6b;
+  --color-border: #e5e5e5;
+  --font-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --max-width: 1100px;
+  --max-width-narrow: 720px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: var(--font-base);
+  color: var(--color-text);
+  background: var(--color-bg);
+  line-height: 1.6;
+}
+
+.wrap {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.wrap-narrow {
+  max-width: var(--max-width-narrow);
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+}
+
+/* Header */
+.site-header .wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 1.5rem;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.site-nav a {
+  margin-left: 1.25rem;
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.site-nav a:hover { color: var(--color-accent); }
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.65rem 1.25rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.btn-primary {
+  background: var(--color-accent);
+  color: #fff;
+}
+
+.btn-primary:hover { background: var(--color-accent-dark); }
+
+.btn-large {
+  padding: 0.9rem 1.75rem;
+  font-size: 1.05rem;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 4rem 1.5rem 3rem;
+}
+
+.hero h1 {
+  font-size: 2.25rem;
+  line-height: 1.25;
+  max-width: 800px;
+  margin: 0 auto 1rem;
+}
+
+.hero-sub {
+  font-size: 1.15rem;
+  color: var(--color-muted);
+  max-width: 620px;
+  margin: 0 auto 2rem;
+}
+
+/* Sections */
+section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.plan {
+  text-align: center;
+  padding: 3rem 1.5rem;
+  background: #f7f7f5;
+}
+
+.plan-steps {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.plan-step {
+  max-width: 260px;
+  text-align: left;
+}
+
+.step-number {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  border-radius: 50%;
+  background: var(--color-accent);
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.contrast {
+  display: flex;
+  gap: 2rem;
+  padding: 3rem 1.5rem;
+  flex-wrap: wrap;
+}
+
+.contrast-col {
+  flex: 1;
+  min-width: 260px;
+  padding: 1.5rem;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+}
+
+.final-cta {
+  text-align: center;
+}
+
+/* Footer */
+.site-footer {
+  border-top: 1px solid var(--color-border);
+  margin-top: 3rem;
+  padding: 2.5rem 1.5rem;
+}
+
+.site-footer .wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.site-footer a {
+  display: block;
+  color: var(--color-text);
+  text-decoration: none;
+  margin-bottom: 0.4rem;
+}
+
+/* Blog */
+.post-list { list-style: none; padding: 0; }
+.post-list-item {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--color-border);
+}
+.post-list-item a { text-decoration: none; color: var(--color-text); }
+.post-meta { color: var(--color-muted); font-size: 0.9rem; }
+
+.cta-block {
+  margin-top: 3rem;
+  padding: 2rem;
+  text-align: center;
+  background: #f7f7f5;
+  border-radius: 6px;
+}
+
+/* Forms */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 480px;
+  margin-top: 1.5rem;
+}
+
+.contact-form label {
+  margin-top: 1rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  padding: 0.6rem;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+  margin-top: 0.3rem;
+}
+
+.contact-form button {
+  margin-top: 1.5rem;
+  align-self: flex-start;
+}
+
+.calendly-embed {
+  margin: 2rem 0;
+}
+
+@media (max-width: 700px) {
+  .site-nav a { margin-left: 0.75rem; font-size: 0.85rem; }
+  .hero h1 { font-size: 1.75rem; }
+}

@@ -1,0 +1,47 @@
+title: Dialed In Trades
+tagline: "Operations consulting for trades businesses under 25 employees"
+description: >-
+  Dialed In Trades helps landscaping, irrigation, and lawn care owners
+  get out of the bottleneck seat by connecting their systems and building
+  the reporting their trade actually needs.
+url: "" # fill in once the custom domain or github.io URL is set
+baseurl: ""
+
+# Contact / booking links - fill these in before launch
+booking_url: "https://calendly.com/REPLACE_ME"
+contact_email: "hello@REPLACE_ME.com"
+
+# Analytics - optional, off by default. Set plausible_domain to enable
+# Plausible (plausible.io), a lightweight privacy-respecting option. Swap
+# the snippet in _layouts/default.html if Fathom or GA4 is preferred instead.
+analytics:
+  plausible_domain: ""
+
+markdown: kramdown
+permalink: /blog/:title/
+
+collections:
+  posts:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules
