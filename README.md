@@ -1,29 +1,68 @@
-# Dialed In Trades
+# Dialed In Trades — Site Source
 
-Website for Dialed In Trades — helping irrigation, electrical, plumbing, and general
-contracting businesses automate day-to-day operations so they can focus on the work
-they do best.
+Static Jekyll site, built to deploy on GitHub Pages.
 
-Static site served via [GitHub Pages](https://pages.github.com/) directly from the
-`main` branch — no build step required.
+## Local setup
+
+1. Install Ruby and Bundler if not already installed.
+2. From this directory, run:
+   ```
+   bundle install
+   bundle exec jekyll serve
+   ```
+3. Visit `http://localhost:4000`.
+
+## Before launch, replace these placeholders
+
+- `_config.yml`
+  - `booking_url`: your real Calendly (or similar) link
+  - `contact_email`: your real contact address
+  - `url`: your GitHub Pages URL or custom domain
+- `contact.md`
+  - Calendly embed `src` URL
+  - Formspree form `action` URL (sign up at formspree.io, create a form, use the ID it gives you)
+- `assets/css/style.css`
+  - `--color-accent` and `--color-accent-dark` are placeholder green. Swap once
+    real brand colors are chosen.
+  - Font stack is system fonts as a placeholder. Swap once typography is chosen.
+- Add a real logo image if you don't want the text logo in the header.
+
+## Deploying to GitHub Pages
+
+1. Push this content to the repo's default branch (or a `gh-pages` branch,
+   depending on how the repo's Pages settings are configured).
+2. In the repo's Settings > Pages, set the source to the branch you pushed to.
+3. GitHub Pages will build automatically using its built-in Jekyll support
+   since the Gemfile uses the `github-pages` gem.
+
+## Adding blog posts
+
+Add a new Markdown file to `_posts/` named `YYYY-MM-DD-title.md` with this
+front matter:
+
+```
+---
+title: "Post Title"
+date: YYYY-MM-DD
+excerpt: "One sentence summary for the blog index."
+---
+```
+
+Write the post body in Markdown below the front matter. It will appear
+automatically on the blog index page.
 
 ## Structure
 
 ```
-index.html       Home page
-services.html    Services overview
-about.html       About page
-contact.html     Contact page
-css/styles.css   Shared stylesheet
-assets/          Images and other static assets
+_config.yml          site settings, booking/contact links
+_layouts/default.html   header, nav, footer, wraps every page
+_layouts/post.html      blog post template
+_posts/               blog content, one file per post
+_includes/             (empty, reserved for shared snippets)
+index.html            home page
+about.md               about page
+services.md            services page
+contact.md              contact page, form + booking embed
+blog/index.html         blog listing page
+assets/css/style.css     all site styling
 ```
-
-## Local preview
-
-Open `index.html` directly in a browser, or serve the folder locally:
-
-```bash
-python3 -m http.server
-```
-
-Then visit `http://localhost:8000`.

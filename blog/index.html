@@ -1,0 +1,22 @@
+---
+layout: default
+title: Blog
+description: "Notes on running operations for landscaping, irrigation, and lawn care businesses."
+permalink: /blog/
+---
+
+<section class="wrap-narrow page-content">
+  <h1>Blog</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+    <li class="post-list-item">
+      <a href="{{ post.url | relative_url }}">
+        <h2>{{ post.title }}</h2>
+      </a>
+      <p class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</p>
+      <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
