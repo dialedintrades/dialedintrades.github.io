@@ -16,7 +16,6 @@ Static Jekyll site, built to deploy on GitHub Pages.
 
 - `_config.yml`
   - `booking_url`: your real Calendly (or similar) link
-  - `contact_email`: your real contact address
   - `url`: your GitHub Pages URL or custom domain
 - `contact.md`
   - Calendly embed `src` URL
