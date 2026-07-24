@@ -5,7 +5,7 @@ description: "Why Dialed In Trades exists, and who's behind it."
 permalink: /about/
 ---
 
-<section class="wrap-narrow page-content">
+<section class="wrap-narrow page-content" markdown="1">
 
 # I ran into this problem before I started fixing it for other people
 
@@ -35,6 +35,15 @@ jobs make money, where the bottlenecks really are.
 A skilled tradesperson shouldn't be trapped running admin work they're bad
 at. You built this business to do the work you're good at. My job is to
 get the rest of it out of your way.
+
+<!--
+  Testimonial placeholder. Not available at launch — drop a client quote
+  or short case study here once one exists, no rebuild required.
+  <div class="testimonial">
+    <p>"Quote goes here."</p>
+    <cite>Name, Company</cite>
+  </div>
+-->
 
 <a class="btn btn-primary" href="{{ site.booking_url }}">Book a Free Discovery Call</a>
 

@@ -5,7 +5,7 @@ description: "How Dialed In Trades works with landscaping, irrigation, and lawn 
 permalink: /services/
 ---
 
-<section class="wrap-narrow page-content">
+<section class="wrap-narrow page-content" markdown="1">
 
 # How we work together
 
@@ -42,6 +42,15 @@ and kept running.
   profitability, that generic field service software doesn't provide.
 - Cutting out the manual re-entry and double-checking that eats hours
   every week without ever showing up as a line item.
+
+<!--
+  Testimonial / case study placeholder. Not available at launch — drop a
+  client result here once one exists, no rebuild required.
+  <div class="testimonial">
+    <p>"Quote or short case study goes here."</p>
+    <cite>Name, Company</cite>
+  </div>
+-->
 
 <a class="btn btn-primary" href="{{ site.booking_url }}">Book a Free Discovery Call</a>
 

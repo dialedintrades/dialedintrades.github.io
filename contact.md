@@ -5,7 +5,7 @@ description: "Book a discovery call or send a message to Dialed In Trades."
 permalink: /contact/
 ---
 
-<section class="wrap-narrow page-content">
+<section class="wrap-narrow page-content" markdown="1">
 
 # Let's talk
 

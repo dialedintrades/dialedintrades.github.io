@@ -11,6 +11,23 @@ layout: default
     {{ content }}
   </div>
 
+  {% assign related = site.posts | where_exp: "post", "post.url != page.url" | limit: 3 %}
+  {% if related.size > 0 %}
+  <div class="related-posts">
+    <h3>More from the blog</h3>
+    <ul class="post-list">
+      {% for post in related %}
+      <li class="post-list-item">
+        <a href="{{ post.url | relative_url }}">
+          <h4>{{ post.title }}</h4>
+        </a>
+        <p class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</p>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+
   <div class="cta-block">
     <h3>Ready to get out of the bottleneck seat?</h3>
     <a class="btn btn-primary" href="{{ site.booking_url }}">Book a Free Discovery Call</a>

@@ -26,6 +26,11 @@ Static Jekyll site, built to deploy on GitHub Pages.
     real brand colors are chosen.
   - Font stack is system fonts as a placeholder. Swap once typography is chosen.
 - Add a real logo image if you don't want the text logo in the header.
+- `_config.yml` → `analytics.plausible_domain`: set this to enable Plausible
+  analytics (leave blank to keep analytics off). Swap the snippet in
+  `_layouts/default.html` if Fathom or GA4 is preferred instead.
+- Testimonials: placeholder comment blocks are left in `about.md` and
+  `services.md` — uncomment and fill in once a client quote exists.
 
 ## Deploying to GitHub Pages
 

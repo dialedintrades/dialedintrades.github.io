@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   {% feed_meta %}
   {% seo %}
+  {% if site.analytics.plausible_domain and site.analytics.plausible_domain != "" %}
+  <script defer data-domain="{{ site.analytics.plausible_domain }}" src="https://plausible.io/js/script.js"></script>
+  {% endif %}
 </head>
 <body>
   <header class="site-header">
