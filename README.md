@@ -21,9 +21,11 @@ Static Jekyll site, built to deploy on GitHub Pages.
   - Calendly embed `src` URL
   - Formspree form `action` URL (sign up at formspree.io, create a form, use the ID it gives you)
 - `assets/css/style.css`
-  - `--color-accent` and `--color-accent-dark` are placeholder green. Swap once
-    real brand colors are chosen.
-  - Font stack is system fonts as a placeholder. Swap once typography is chosen.
+  - Brand colors (terracotta/teal) and fonts (Fraunces/Manrope) are set, matching
+    davidcmitchell.com's rebrand.
+- `newsletter.md`
+  - Create a dedicated form for Dialed In Trades in the Kit dashboard, then
+    replace the placeholder embed comment with the real `<script>` embed.
 - Add a real logo image if you don't want the text logo in the header.
 - `_config.yml` → `analytics.plausible_domain`: set this to enable Plausible
   analytics (leave blank to keep analytics off). Swap the snippet in
@@ -66,6 +68,8 @@ _includes/             (empty, reserved for shared snippets)
 index.html            home page
 about.md               about page
 services.md            services page
+resources.md            tools & blog resources page
+newsletter.md           email signup page
 contact.md              contact page, form + booking embed
 blog/index.html         blog listing page
 assets/css/style.css     all site styling

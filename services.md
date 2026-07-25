@@ -43,6 +43,29 @@ and kept running.
 - Cutting out the manual re-entry and double-checking that eats hours
   every week without ever showing up as a line item.
 
+## What you'll walk away with
+
+- A fully documented operations playbook your crew can actually follow
+- Delegation structures so you're not the one every question routes through
+- Metrics and reports your team owns, not just numbers you check alone
+- Confidence that the business runs whether or not you're in the truck that day
+- Time back in your week for growth, bidding, or life outside the business
+
+## Is this right for you?
+
+This works best when:
+
+- You've got a crew (even a small one) and need to stop doing everything yourself
+- You're generating steady revenue but feel like you're running on a hamster wheel
+- You've tried delegating before, but it never quite stuck
+- You know you need better systems, but don't know where to start
+
+## Investment
+
+Monthly retainer, starting at **$1,000–$1,500/month**. Scope depends on the size of your operation and how deep the engagement goes.
+
+The first step is always a free discovery call to understand your situation and figure out if it's a good fit.
+
 <!--
   Testimonial / case study placeholder. Not available at launch — drop a
   client result here once one exists, no rebuild required.
