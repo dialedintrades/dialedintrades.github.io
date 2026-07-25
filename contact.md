@@ -21,12 +21,15 @@ If you're not ready for that yet, send a message below.
 -->
 <div class="calendly-embed">
   <iframe
-    src="https://calendly.com/REPLACE_ME"
+    src="https://calendar.app.google/4KJy3WNjX9HsEJbZ9"
     width="100%"
     height="700"
     frameborder="0">
   </iframe>
 </div>
+
+
+
 
 ## Or send a message
 
@@ -35,7 +38,8 @@ If you're not ready for that yet, send a message below.
   a third-party form handler is required. Sign up at formspree.io, create a
   form, and replace YOUR_FORM_ID below with the ID it gives you.
 -->
-<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
+
+<form class="contact-form" action="https://submit-form.com/wCrWwiMxa" method="POST">
   <label for="name">Name</label>
   <input type="text" id="name" name="name" required>
 

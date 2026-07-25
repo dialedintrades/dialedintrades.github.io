@@ -1,11 +1,15 @@
 :root {
   --color-text: #1a1a1a;
-  --color-bg: #ffffff;
-  --color-accent: #1f5e4a; /* placeholder green, swap once branding is set */
-  --color-accent-dark: #163f32;
-  --color-muted: #6b6b6b;
-  --color-border: #e5e5e5;
-  --font-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --color-bg: #f3efe4;
+  --color-surface: #ffffff;
+  --color-surface-dark: #17313a;
+  --color-accent: #b6542e; /* terracotta - primary CTA color */
+  --color-accent-dark: #954323;
+  --color-secondary: #2f7c74; /* teal - secondary accent */
+  --color-muted: #5b6b6e;
+  --color-border: #e5ded0;
+  --font-heading: "Fraunces", Georgia, serif;
+  --font-base: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   --max-width: 1100px;
   --max-width-narrow: 720px;
 }
@@ -18,6 +22,10 @@ body {
   color: var(--color-text);
   background: var(--color-bg);
   line-height: 1.6;
+}
+
+h1, h2, h3, .logo {
+  font-family: var(--font-heading);
 }
 
 .wrap {
@@ -33,6 +41,11 @@ body {
 }
 
 /* Header */
+.site-header {
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+}
+
 .site-header .wrap {
   display: flex;
   justify-content: space-between;
@@ -54,16 +67,17 @@ body {
   font-size: 0.95rem;
 }
 
-.site-nav a:hover { color: var(--color-accent); }
+.site-nav a:hover { color: var(--color-secondary); }
 
 /* Buttons */
 .btn {
   display: inline-block;
   padding: 0.65rem 1.25rem;
-  border-radius: 4px;
+  border-radius: 6px;
   text-decoration: none;
   font-weight: 600;
   font-size: 0.95rem;
+  transition: background 0.15s ease, transform 0.15s ease;
 }
 
 .btn-primary {
@@ -71,7 +85,10 @@ body {
   color: #fff;
 }
 
-.btn-primary:hover { background: var(--color-accent-dark); }
+.btn-primary:hover {
+  background: var(--color-accent-dark);
+  transform: translateY(-1px);
+}
 
 .btn-large {
   padding: 0.9rem 1.75rem;
@@ -107,7 +124,7 @@ section h2 {
 .plan {
   text-align: center;
   padding: 3rem 1.5rem;
-  background: #f7f7f5;
+  background: var(--color-surface);
 }
 
 .plan-steps {
@@ -121,6 +138,10 @@ section h2 {
 .plan-step {
   max-width: 260px;
   text-align: left;
+  padding: 1.5rem;
+  background: var(--color-bg);
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(23, 49, 58, 0.08);
 }
 
 .step-number {
@@ -130,7 +151,7 @@ section h2 {
   line-height: 2rem;
   text-align: center;
   border-radius: 50%;
-  background: var(--color-accent);
+  background: var(--color-secondary);
   color: #fff;
   font-weight: 700;
   margin-bottom: 0.5rem;
@@ -146,13 +167,70 @@ section h2 {
 .contrast-col {
   flex: 1;
   min-width: 260px;
-  padding: 1.5rem;
+  padding: 1.75rem;
   border: 1px solid var(--color-border);
-  border-radius: 6px;
+  border-radius: 8px;
+  background: var(--color-surface);
 }
+
+.contrast-col:first-child {
+  background: var(--color-surface-dark);
+  border-color: var(--color-surface-dark);
+  color: #f3efe4;
+}
+
+.contrast-col:first-child h3 { color: #fff; }
 
 .final-cta {
   text-align: center;
+}
+
+.success {
+  padding: 1rem 1.5rem 3rem;
+}
+
+.success-list {
+  list-style: none;
+  padding: 0;
+  max-width: var(--max-width-narrow);
+  margin: 1.5rem auto 0;
+}
+
+.success-list li {
+  padding-left: 1.75rem;
+  position: relative;
+  margin-bottom: 0.85rem;
+}
+
+.success-list li::before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  color: var(--color-secondary);
+  font-weight: 700;
+}
+
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.section-head a {
+  color: var(--color-secondary);
+  text-decoration: none;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.home-recent-posts {
+  padding: 2rem 1.5rem 3rem;
+}
+
+.home-recent-posts .post-list {
+  margin-top: 1.5rem;
 }
 
 /* Footer */
@@ -160,6 +238,7 @@ section h2 {
   border-top: 1px solid var(--color-border);
   margin-top: 3rem;
   padding: 2.5rem 1.5rem;
+  background: var(--color-surface);
 }
 
 .site-footer .wrap {
@@ -189,8 +268,9 @@ section h2 {
   margin-top: 3rem;
   padding: 2rem;
   text-align: center;
-  background: #f7f7f5;
-  border-radius: 6px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
 }
 
 /* Forms */

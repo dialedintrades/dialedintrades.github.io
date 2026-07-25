@@ -36,6 +36,23 @@ A skilled tradesperson shouldn't be trapped running admin work they're bad
 at. You built this business to do the work you're good at. My job is to
 get the rest of it out of your way.
 
+## What I believe
+
+**Systems beat heroics.** The owner working 80-hour weeks isn't a hero,
+they're a single point of failure. Build systems so the business can run
+without you.
+
+**Your business should work without you. Not someday, now.** If you left
+for a month, would the wheels come off? If so, that's not a time problem,
+it's a systems problem.
+
+## Background
+
+- MBA, BYU
+- BS in Computer Science, BYU
+- Certified Scrum Master, Scrum Alliance
+- 20+ years in software development before running my own trades business
+
 <!--
   Testimonial placeholder. Not available at launch — drop a client quote
   or short case study here once one exists, no rebuild required.

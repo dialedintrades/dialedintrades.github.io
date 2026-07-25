@@ -70,6 +70,16 @@ description: "Operations consulting for landscaping, irrigation, and lawn care o
   </p>
 </section>
 
+<section class="success wrap-narrow">
+  <h2>What changes once the systems are running</h2>
+  <ul class="success-list">
+    <li>Clear, documented processes your crew can follow without you on the phone</li>
+    <li>Reports that show what's actually happening in the business, not guesses</li>
+    <li>Time back in your week for growth, family, and the reasons you started this business</li>
+    <li>Confidence that a week off doesn't mean a week of catching up when you're back</li>
+  </ul>
+</section>
+
 <section class="contrast wrap">
   <div class="contrast-col">
     <h3>Right now</h3>
@@ -84,4 +94,28 @@ description: "Operations consulting for landscaping, irrigation, and lawn care o
 <section class="final-cta wrap-narrow">
   <h2>Start with a conversation</h2>
   <a class="btn btn-primary btn-large" href="{{ site.booking_url }}">Book a Free Discovery Call</a>
+</section>
+
+<section class="home-recent-posts wrap-narrow">
+  <div class="section-head">
+    <h2>From the Blog</h2>
+    <a href="{{ '/blog/' | relative_url }}">See all posts</a>
+  </div>
+  <ul class="post-list">
+    {% for post in site.posts limit: 3 %}
+    <li class="post-list-item">
+      <a href="{{ post.url | relative_url }}"><h3>{{ post.title }}</h3></a>
+      <p class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</p>
+      <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="wrap-narrow">
+  <div class="cta-block">
+    <h3>Get operations tips in your inbox</h3>
+    <p>Short, practical notes on systems, reporting, and running a trades business that doesn't need you in every job.</p>
+    <a class="btn btn-primary" href="{{ '/newsletter/' | relative_url }}">Subscribe</a>
+  </div>
 </section>
